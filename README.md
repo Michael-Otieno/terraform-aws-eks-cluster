@@ -6,6 +6,7 @@
   
 ## Once the files are ready, we can deploy everything with three simple commands:
 ```
+cd project-1
 terraform init     # Initialize the project and download modules
 terraform plan     # Preview the infrastructure that will be created
 terraform apply    # Deploy it to AWS
