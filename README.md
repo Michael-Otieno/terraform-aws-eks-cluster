@@ -3,10 +3,10 @@
 - create a folder inside your project directory called private-key
 -  add the private key there.
 -  Remember to add the privae-key folder to your .gitignore before pushing to github.
+-  Once the files are ready, we can deploy everything with three simple commands
 
 ## Project-1 is the vpc. Create the vpc first
 
-## Once the files are ready, we can deploy everything with three simple commands:
 ```
 cd project-1
 terraform init     # Initialize the project and download modules
