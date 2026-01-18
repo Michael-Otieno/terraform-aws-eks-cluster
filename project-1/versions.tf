@@ -14,7 +14,8 @@ terraform {
     region = "us-east-1" 
  
     # For State Locking
-    dynamodb_table = "dev-ekscluster"    
+    # dynamodb_table = "dev-ekscluster"  
+    use_lockfile = true
   }  
 }
 

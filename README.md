@@ -3,17 +3,16 @@
 - create a folder inside your project directory called private-key
 -  add the private key there.
 -  Remember to add the privae-key folder to your .gitignore before pushing to github.
+-  Once the files are ready, we can deploy everything with three simple commands
 
-## Project-1 is the vpc. Create the vpc first
-  
-## Once the files are ready, we can deploy everything with three simple commands:
+## Project-1 creates the vpc and EKS cluster. Create this first.
+
 ```
 cd project-1
 terraform init     # Initialize the project and download modules
 terraform plan     # Preview the infrastructure that will be created
 terraform apply    # Deploy it to AWS
 ```
-
 ## Project-2 installs EBS CSI Driver using HELM. Create the vpc first
 ```
 cd project-2
@@ -29,7 +28,9 @@ Check the clusters that actually exist in your account/region on your terminal:
 ```
 aws eks list-clusters --region us-east-1
 ```
-If the cluster does not exists, regenerate the kubeconfig so it has the correct endpoint
+
+If the cluster does not exist, regenerate the kubeconfig so it has the correct endpoint
+
 
 ```
 aws eks update-kubeconfig --name SAP-dev-eksdemo --region us-east-1
