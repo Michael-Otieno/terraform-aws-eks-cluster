@@ -5,7 +5,7 @@
 -  Remember to add the privae-key folder to your .gitignore before pushing to github.
 -  Once the files are ready, we can deploy everything with three simple commands
 
-## Project-1 is the vpc. Create the vpc first
+## Project-1 is the vpc and EKS cluster. Create the vpc first
 
 ```
 cd project-1
