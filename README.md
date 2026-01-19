@@ -1,8 +1,4 @@
 ## Deploying the Infrastructure
-- Create a private key from your aws account,
-- create a folder inside your project directory called private-key
--  add the private key there.
--  Remember to add the privae-key folder to your .gitignore before pushing to github.
 -  Once the files are ready, we can deploy everything with three simple commands
 
 ## Project-1 creates the vpc and EKS cluster. Create this first.
