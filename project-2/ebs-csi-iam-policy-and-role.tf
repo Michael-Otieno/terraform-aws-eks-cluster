@@ -1,6 +1,3 @@
-#data.terraform_remote_state.eks.outputs.aws_iam_openid_connect_provider_arn
-#data.terraform_remote_state.eks.outputs.aws_iam_openid_connect_provider_extract_from_arn
-
 # Resource: Create EBS CSI IAM Policy 
 resource "aws_iam_policy" "ebs_csi_iam_policy" {
   name        = "${local.name}-AmazonEKS_EBS_CSI_Driver_Policy"
@@ -33,7 +30,6 @@ resource "aws_iam_role" "ebs_csi_iam_role" {
             "${data.terraform_remote_state.eks.outputs.aws_iam_openid_connect_provider_extract_from_arn}:sub": "system:serviceaccount:kube-system:ebs-csi-controller-sa"
           }
         }        
-
       },
     ]
   })
