@@ -9,13 +9,8 @@ terraform init     # Initialize the project and download modules
 terraform plan     # Preview the infrastructure that will be created
 terraform apply    # Deploy it to AWS
 ```
-## Project-2 installs EBS CSI Driver using HELM. Create the vpc first
-```
-cd project-2
-terraform init     # Initialize the project and download modules
-terraform plan     # Preview the infrastructure that will be created
-terraform apply    # Deploy it to AWS
-```
+
+## Project-2 installs EBS CSI Driver using HELM. Create the vpc first. [README.md link](https://github.com/Michael-Otieno/terraform-aws-eks-cluster/blob/main/project-2/README.md)
 
 
 ## Verify the created services on the AWS console.
