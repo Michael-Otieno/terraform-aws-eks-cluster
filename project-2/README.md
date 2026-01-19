@@ -1,4 +1,4 @@
-## Project-2 installs EBS CSI Driver using HELM. Create the vpc first
+## Installs EBS CSI Driver using HELM. Create the vpc first
 ```
 cd project-2
 terraform init     # Initialize the project and download modules
