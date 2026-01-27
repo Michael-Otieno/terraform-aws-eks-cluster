@@ -83,9 +83,9 @@ variable "environment" {
 }
 
 variable "business_division" {
-  description = "The business division for the resources (e.g., sales, marketing)"
+  description = "The business division for the resources (e.g., staff, public,customer service)"
   type        = string
-  default     = "SAP"
+  default     = "PUB"
 }
 
 # AWS EC2 Instance Terraform Variables

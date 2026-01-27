@@ -10,4 +10,4 @@ spec:
     app: usermgmt-webapp
   ports: 
     - port: 80 # Service Port
-      targetPort: 8080 # Container Port
+      targetPort: 8000 # Container Port

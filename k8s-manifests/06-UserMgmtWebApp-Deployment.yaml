@@ -23,7 +23,7 @@ spec:
           image: motieno205/usermanagement:latest
           imagePullPolicy: Always
           ports: 
-            - containerPort: 8080           
+            - containerPort: 8000           
           env:
             - name: DB_HOSTNAME
               value: "mysql"            
@@ -35,3 +35,10 @@ spec:
               value: "root"            
             - name: DB_PASSWORD
               value: "django_pass"            
+
+
+
+
+
+
+
