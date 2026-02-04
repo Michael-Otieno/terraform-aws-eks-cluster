@@ -32,3 +32,11 @@ Then test
 kubectl get nodes 
 kubectl get pods -A
 ```
+
+
+# clean the state
+
+1. terraform state rm module.vpc_region_1["tenant_b"].module.vpc.aws_internet_gateway.this[0]
+2. terraform state rm module.vpc_region_1["tenant_b"].module.vpc.aws_subnet.public[0]
+3. terraform state rm module.vpc_region_1["tenant_b"].module.vpc.aws_subnet.public[1]
+4. terraform state rm module.vpc_region_1["tenant_b"].module.vpc.aws_vpc.this[0]

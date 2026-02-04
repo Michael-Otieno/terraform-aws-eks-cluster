@@ -29,12 +29,27 @@ spec:
             - containerPort: 8000
           env:
             - name: DB_HOSTNAME
-              value: mysql
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_HOSTNAME
             - name: DB_PORT
-              value: "3306"
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_PORT
             - name: DB_NAME
-              value: user_management
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_NAME
             - name: DB_USERNAME
-              value: root
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_USERNAME
             - name: DB_PASSWORD
-              value: django_pass
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: DB_PASSWORD
