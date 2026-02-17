@@ -1,7 +1,7 @@
 ## Deploying the Infrastructure
 -  Once the files are ready, we can deploy everything with three simple commands
 
-## Project-1 creates the vpc and EKS cluster. Create this first.
+## Project-1: ```vpc-eks``` creates the vpc and EKS cluster. Create this first.
 
 ```
 cd project-1
@@ -10,7 +10,7 @@ terraform plan     # Preview the infrastructure that will be created
 terraform apply    # Deploy it to AWS
 ```
 
-## Project-2 installs EBS CSI Driver using HELM. Create the vpc first. [README.md link](https://github.com/Michael-Otieno/terraform-aws-eks-cluster/blob/main/project-2/README.md)
+## Project-2: ```ebs-csi``` installs EBS CSI Driver using HELM. Create the vpc first. [README.md link](https://github.com/Michael-Otieno/terraform-aws-eks-cluster/blob/main/project-2/README.md)
 
 
 ## Verify the created services on the AWS console.
