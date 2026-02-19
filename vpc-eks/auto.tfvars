@@ -2,7 +2,7 @@ aws_region        = "us-east-1"
 
 # Generic Variables
 environment = "dev"
-business_division = "hr"
+business_division = "PUB" # public
 
 # VPC Variables
 vpc_name                               = "myvpc"
@@ -18,7 +18,7 @@ vpc_single_nat_gateway                 = true
 instance_type    = "t3.micro"
 instance_keypair = "terraform-key"
 
-cluster_name = "eksdemo1"
+cluster_name = "eksdemo"
 cluster_service_ipv4_cidr = "172.20.0.0/16"
 cluster_version = "1.32"
 cluster_endpoint_private_access = false
